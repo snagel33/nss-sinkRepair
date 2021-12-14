@@ -19,5 +19,12 @@ export const Requests = () => {
 
 //list items
 const convertRequestsToListElement = (request) => {
-    return `<li> ${request.description}</li>`
+    return `
+        <li> 
+            ${request.description}
+            <button class="request__delete"
+                id="request--${request.id}">
+                Delete
+            </button>
+        </li>`
 } 

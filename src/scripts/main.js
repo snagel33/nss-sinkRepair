@@ -1,8 +1,22 @@
 import { SinkRepair } from "./SinkRepair.js"
-import { fetchRequests } from "./dataAccess.js"
+import { fetchRequests, deleteRequest } from "./dataAccess.js"
 
 
-const mainContainer = document.querySelector("#container")
+export const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener(
+    "stateChanged",
+    customEvent => {
+        render()
+    }
+)
+
+mainContainer.addEventListener("click", click => {
+    if (click.target.id.startsWith("request--")) {
+        const [,requestId] = click.target.id.split("--")
+        deleteRequest(parseInt(requestId))
+    }
+})
 
 const render = () => {
     fetchRequests().then(
