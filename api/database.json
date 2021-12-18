@@ -7,34 +7,6 @@
     {
       "id": 2,
       "name": "Maude"
-    },
-    {
-      "description": "Test",
-      "address": "Test",
-      "budget": "200",
-      "neededBy": "2021-12-30",
-      "id": 3
-    },
-    {
-      "description": "1",
-      "address": "1",
-      "budget": "1",
-      "neededBy": "2021-12-31",
-      "id": 4
-    },
-    {
-      "description": "1",
-      "address": "1",
-      "budget": "1",
-      "neededBy": "2021-12-24",
-      "id": 5
-    },
-    {
-      "description": "1",
-      "address": "1",
-      "budget": "1",
-      "neededBy": "2021-12-31",
-      "id": 6
     }
   ],
   "completions": [],

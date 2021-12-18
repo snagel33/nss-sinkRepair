@@ -46,7 +46,7 @@ export const sendRequest = (userServiceRequest) => {
         body: JSON.stringify(userServiceRequest)
     }
 
-    return fetch(`${API}/plumbers`, fetchOptions)
+    return fetch(`${API}/requests`, fetchOptions)
         .then(response => response.json())
         .then(() => {
             mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
